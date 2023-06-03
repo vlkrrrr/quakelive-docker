@@ -1,2 +1,2 @@
-### Docker image for Quakelive Vamp PQL
+### Docker image for Quake Live PQL Vamp mode
 under construction...

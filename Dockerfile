@@ -7,7 +7,9 @@ COPY /minqlx/bin /qlserver/
 RUN cd /qlserver && git clone https://github.com/MinoMino/minqlx-plugins.git && cd minqlx-plugins && python3 -m pip install -r minqlx-plugins/requirements.txt
 
 FROM ubuntu:22.10
-WORKDIR /var/ 
+RUN useradd --create-home --shell /bin/bash qladmin
+USER qladmin
+WORKDIR /home/qladmin
 COPY --from=builder ./tmp/qlserver ./qlserver
 COPY ./access.txt ./qlserver/
 COPY ./startserver.sh ./qlserver/

@@ -7,7 +7,7 @@ RUN poetry --version
 RUN git clone https://github.com/MinoMino/minqlx.git && cd minqlx && make
 RUN ls -l
 RUN cp -r minqlx/bin/ qlserver/
-RUN cd qlserver && git clone https://github.com/MinoMino/minqlx-plugins.git
+RUN cd qlserver && git clone https://github.com/vlkrrrr/minqlx-plugins.git
 RUN cd qlserver && cd minqlx-plugins && pip install -r requirements.txt
 
 FROM ubuntu:22.10

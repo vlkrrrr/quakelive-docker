@@ -1,6 +1,6 @@
 name: first try
-on: workfow_dispatch
-job:
+on: workflow_dispatch
+jobs:
   hello-wourld:
     runs-on: ubuntu-latest
     steps:

@@ -1,0 +1,10 @@
+name: first try
+on: workfow_dispatch
+job:
+  hello-wourld:
+    runs-on: ubuntu-latest
+    steps:
+      - name: greeting
+        run: | 
+            echo "banane"
+            echo "esta delicioso"

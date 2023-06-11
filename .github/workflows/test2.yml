@@ -4,7 +4,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: get code
-        run: | 
-            echo "banane"
-            echo "esta delicioso"
+        - name: get code
+          uses: actions/checkout@v3
+        - name: install nodejs
+          uses: actions/setup-node@v3
+          with:
+            node-versions: 18

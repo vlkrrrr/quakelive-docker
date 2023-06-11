@@ -10,3 +10,5 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-versions: 18
+        - name: Ouput stuff
+          run: echo "${{toJson(github)}}"

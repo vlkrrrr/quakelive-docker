@@ -11,7 +11,7 @@ func TestAdd(t *testing.T) {
 }
 
 func TestMultiply(t *testing.T) {
-	want := 11
+	want := 10
 	have := Multiply(5, 2)
 	if want != have {
 		t.Errorf("wanted %d but have %d", want, have)

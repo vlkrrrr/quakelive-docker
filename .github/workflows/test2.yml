@@ -1,5 +1,5 @@
 name: second
-on: push
+on: 
 jobs:
   test:
     runs-on: ubuntu-latest
